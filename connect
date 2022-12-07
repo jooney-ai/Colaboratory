@@ -1,0 +1,23 @@
+how to connect to local
+
+1. run terminal
+2. write 
+
+pip install jupyter_http_over_ws
+jupyter serverextension enable --py jupyter_http_over_ws
+
+3. set flag
+
+jupyter notebook
+--NotebookApp.allow_origin='https://colab.research.google.com'
+--port=8888
+--NotebookApp.port_retries=0
+
+4. copy last two kinds of token http address
+
+5. paste on colab local runtime
+
+
+* if port 8888 doesn't work, write down below and try again
+
+jupyter notebook stop --port=8888
